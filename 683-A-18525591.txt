@@ -1,0 +1,17 @@
+/**
+ * We declare a package-level function main which returns Unit and takes
+ * an Array of strings as a parameter. Note that semicolons are optional.
+ */
+import java.io.InputStream
+import java.io.InputStreamReader
+import java.io.BufferedReader
+
+fun main(args: Array<String>) {
+val (x, y, z) = readLine()!!.split(' ').map(String::toInt)
+if(y<x&&z<x&&y>0&&z>0)
+println(0)
+else if(((y==x||z==x)||(z==0)||(y==0))&&(y<=x&&z<=x&&y>=0&&z>=0))
+println(1)
+else println(2)
+   
+}
